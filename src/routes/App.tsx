@@ -39,7 +39,7 @@ function App() {
         <a
           href={framework.url}
           className="link-p"
-          style={{ color: framework.color }}
+          // style={{ color: "rgba(255, 255, 255, 0.87)" }}
         >
           {framework.name}
         </a>
@@ -63,35 +63,35 @@ function App() {
         <div className="card">
           <p>
             Hi, my name is
-            <span style={{ color: "rgb(155, 40, 255)" }}> Daniel</span>, though
-            some people know me as
-            <span style={{ color: "rgb(155, 40, 255)" }}> Dread9182 </span>
+            <span> Daniel</span>, though some people know me as
+            <span> Dread9182 </span>
             or
-            <span style={{ color: "rgb(155, 40, 255)" }}> Cecilio</span>, I am a
-            Computer Science student based in Medellín, Colombia. With a passion
-            for software development, competitive programming and gaming, I
-            strive to learn whilst having fun and creating meaningful
-            relationships.
+            <span> Cecilio</span>, I am a Computer Science student based in
+            Medellín, Colombia. With a passion for software development,
+            competitive programming and gaming, I strive to learn whilst having
+            fun and creating meaningful relationships.
           </p>
           <p>
             I'm proficient in
-            <span style={{ color: "rgba(236, 32, 37, 0.9)" }}> Java</span>,
-            <span style={{ color: "rgb(155, 40, 255)" }}> Python</span>,&nbsp;
-            <span style={{ color: "rgba(247, 223, 30, 0.9)" }}>JavaScript</span>
+            <span> Java</span>,<span> Python</span>,&nbsp;
+            <span>JavaScript</span>
             &nbsp;and
-            <span style={{ color: "rgb(49, 121, 199)" }}> TypeScript</span>, I
-            also have knowledge in SQL and NoSQL databases, more specifically
-            <span style={{ color: "rgb(58, 114, 170)" }}> PostgreSQL</span> and
-            <span style={{ color: "rgb(7,160,76)" }}> MongoDB</span>, as well as
-            REST APIs. Over the course of my studies, I have worked on several
-            projects spanning different libraries and frameworks, such as:
+            <span> TypeScript</span>, I also have knowledge in <span>SQL</span>{" "}
+            and <span>NoSQL </span>
+            databases, more specifically
+            <span> PostgreSQL</span> and
+            <span> MongoDB</span>, as well as <span>REST APIs</span>. Over the
+            course of my studies, I have worked on several projects spanning
+            different libraries and frameworks, such as:
           </p>
           <ul>{usedTecnologies}</ul>
           <p>
             If you are interested in checking out some of the projects I have
             done I would encourage you to check out the&nbsp;
             <Link to={`/projects`}>
-              <span className="link-p"> projects </span>
+              <span className="link-p" style={{ color: "rgb(155,40,255" }}>
+                projects
+              </span>
             </Link>
             &nbsp;tab or my&nbsp;
             <a className="link-p" href="https://github.com/Dread9182">
@@ -102,7 +102,9 @@ function App() {
           <p>
             If you are interested in contacting me you can go to the&nbsp;
             <Link to={`/contact`}>
-              <span className="link-p">contact</span>
+              <span className="link-p" style={{ color: "rgb(155,40,255" }}>
+                contact
+              </span>
             </Link>
             &nbsp;tab, which contains all of my public socials and contact
             information.

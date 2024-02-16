@@ -18,6 +18,10 @@
   text-align: justify;
 }
 
+.card span {
+  color: rgb(40, 155, 255);
+}
+
 .card ul {
   display: flex;
   flex-direction: column;
