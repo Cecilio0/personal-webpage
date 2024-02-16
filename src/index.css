@@ -9,7 +9,7 @@
 
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242120;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,12 +19,8 @@
 
 a {
   font-weight: 500;
-  color: blueviolet;
+  color: rgb(155, 40, 255);
   text-decoration: inherit;
-}
-
-a:hover {
-  color: blueviolet;
 }
 
 body {
@@ -34,8 +30,9 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0.5em;
 }
 
 button {

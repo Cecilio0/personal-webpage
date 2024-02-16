@@ -12,8 +12,7 @@ function Error() {
           The route you just tried to follow does not exist, please go back to
           the
           <Link to={`/`}>
-            {" "}
-            <p className="link-p">landing page</p>
+            <p className="link-p"> landing page</p>
           </Link>
         </p>
       </div>

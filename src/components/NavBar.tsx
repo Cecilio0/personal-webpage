@@ -1,31 +1,44 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-import viteLogo from "../assets/vite.svg";
+// import viteLogo from "../assets/vite.svg";
 
 function NavBar() {
+  const fields = [
+    {
+      // Logo placeholder
+      field: "</>",
+      route: "/",
+    },
+    {
+      field: "Projects",
+      route: "/projects",
+    },
+    {
+      field: "Contact",
+      route: "/contact",
+    },
+  ];
+
+  const navBarItems = fields.map((field) => {
+    return (
+      <li>
+        <Link to={field.route}>
+          <span>{field.field}</span>
+        </Link>
+      </li>
+    );
+  });
+
   return (
     <nav className="nav-bar">
       <ul>
-        <li>
-          <Link to={`/`}>
+        {/* If I ever decide to add a logo instead of </> */}
+        {/* <li>
+          <Link to={`/`} className="flex-link">
             <img src={viteLogo} alt="Vite logo" />
           </Link>
-        </li>
-        <li>
-          <Link to={`/projects`} className="link">
-            <p>Projects</p>
-          </Link>
-        </li>
-        <li>
-          <Link to={`/projects`}>
-            <p>Projects</p>
-          </Link>
-        </li>
-        <li>
-          <Link to={`/contact`}>
-            <p>Contact</p>
-          </Link>
-        </li>
+        </li> */}
+        {navBarItems}
       </ul>
     </nav>
   );
