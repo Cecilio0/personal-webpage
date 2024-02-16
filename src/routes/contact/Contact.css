@@ -1,0 +1,10 @@
+.contact {
+  display: flex;
+
+  max-width: 100%;
+
+  min-height: 40vh;
+
+  justify-content: center;
+  align-items: center;
+}

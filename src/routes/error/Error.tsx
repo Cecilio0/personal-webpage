@@ -10,9 +10,9 @@ function Error() {
         <h2>404 Not Found</h2>
         <p>
           The route you just tried to follow does not exist, please go back to
-          the
+          the&nbsp;
           <Link to={`/`}>
-            <p className="link-p"> landing page</p>
+            <p className="link-p">landing page</p>
           </Link>
         </p>
       </div>

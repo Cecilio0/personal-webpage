@@ -25,6 +25,6 @@
   list-style-type: circle;
 }
 
-.read-the-docs {
-  color: #888;
+.color-picker {
+  color: rgba(236, 32, 35, 0.8);
 }
