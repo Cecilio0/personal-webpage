@@ -88,10 +88,8 @@ function App() {
           <p>
             If you are interested in checking out some of the projects I have
             done I would encourage you to check out the&nbsp;
-            <Link to={`/projects`}>
-              <span className="link-p" style={{ color: "rgb(155,40,255" }}>
-                projects
-              </span>
+            <Link to={`/projects`} className="link-p">
+              projects
             </Link>
             &nbsp;tab or my&nbsp;
             <a className="link-p" href="https://github.com/Dread9182">
@@ -101,10 +99,8 @@ function App() {
           </p>
           <p>
             If you are interested in contacting me you can go to the&nbsp;
-            <Link to={`/contact`}>
-              <span className="link-p" style={{ color: "rgb(155,40,255" }}>
-                contact
-              </span>
+            <Link to={`/contact`} className="link-p">
+              contact
             </Link>
             &nbsp;tab, which contains all of my public socials and contact
             information.

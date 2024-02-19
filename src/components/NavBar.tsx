@@ -22,9 +22,7 @@ function NavBar() {
   const navBarItems = fields.map((field) => {
     return (
       <li key={field.field}>
-        <Link to={field.route}>
-          <span>{field.field}</span>
-        </Link>
+        <Link to={field.route}>{field.field}</Link>
       </li>
     );
   });
