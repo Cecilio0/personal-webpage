@@ -1,34 +1,42 @@
 import "./App.css";
-// import reactLogo from "../assets/react.svg";
-// import viteLogo from "../assets/vite.svg";
 import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
+import springLogo from "../assets/frameworks/spring-boot-logo.png";
+import nextLogo from "../assets/frameworks/nextjs-logo.svg";
+import nestLogo from "../assets/frameworks/nestjs-logo.svg";
+import expressLogo from "../assets/frameworks/express-logo.png";
+import reactLogo from "../assets/frameworks/react-logo.svg";
 
 function App() {
   const frameworks = [
     {
       name: "Spring Boot",
       color: "rgb(109,179,63)",
+      logo: springLogo,
       url: "https://spring.io/projects/spring-boot",
     },
     {
       name: "NextJs",
       color: "rgba(255, 255, 255, 0.87)",
+      logo: nextLogo,
       url: "https://nextjs.org",
     },
     {
       name: "NestJs",
       color: "rgb(224,34,78)",
+      logo: nestLogo,
       url: "https://nestjs.com",
     },
     {
       name: "Express",
       color: "rgba(255, 255, 255, 0.87)",
+      logo: expressLogo,
       url: "https://expressjs.com",
     },
     {
       name: "React",
       color: "rgb(1,127,165)",
+      logo: reactLogo,
       url: "https://react.dev",
     },
   ];
@@ -43,6 +51,7 @@ function App() {
         >
           {framework.name}
         </a>
+        <img src={framework.logo} alt="" />
       </li>
     );
   });
@@ -51,22 +60,12 @@ function App() {
     <>
       <NavBar />
       <div className="app">
-        {/* <div>
-          <a href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
-        </div> */}
         <h1>About Me</h1>
         <div className="card">
           <p>
             Hi, my name is
             <span> Daniel</span>, though some people know me as
-            <span> Dread9182 </span>
-            or
-            <span> Cecilio</span>, I am a Computer Science student based in
+            <span> Cecilio0</span>, I am a Computer Science student based in
             Medellín, Colombia. With a passion for software development,
             competitive programming and gaming, I strive to learn whilst having
             fun and creating meaningful relationships.

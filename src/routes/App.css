@@ -23,10 +23,26 @@
 }
 
 .card ul {
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(15%, 1fr));
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.card li {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  list-style-type: circle;
+  align-items: center;
+  margin: 0.24em;
+}
+
+.card img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 4em;
 }
 
 .color-picker {
