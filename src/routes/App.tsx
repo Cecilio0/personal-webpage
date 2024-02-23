@@ -1,6 +1,6 @@
 import "./App.css";
-import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
+import NavBar from "../components/NavBar";
 import springLogo from "../assets/frameworks/spring-boot-logo.png";
 import nextLogo from "../assets/frameworks/nextjs-logo.svg";
 import nestLogo from "../assets/frameworks/nestjs-logo.svg";
