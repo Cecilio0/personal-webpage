@@ -7,15 +7,15 @@ function NavBar() {
     {
       // Logo placeholder
       field: "</>",
-      route: "/",
+      route: "/personal-webpage",
     },
     {
       field: "Projects",
-      route: "/projects",
+      route: "/personal-webpage/projects",
     },
     {
       field: "Contact",
-      route: "/contact",
+      route: "/personal-webpage/contact",
     },
   ];
 
@@ -29,15 +29,7 @@ function NavBar() {
 
   return (
     <nav className="nav-bar">
-      <ul>
-        {/* If I ever decide to add a logo instead of </> */}
-        {/* <li>
-          <Link to={`/`} className="flex-link">
-            <img src={viteLogo} alt="Vite logo" />
-          </Link>
-        </li> */}
-        {navBarItems}
-      </ul>
+      <ul>{navBarItems}</ul>
     </nav>
   );
 }
