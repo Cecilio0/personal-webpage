@@ -13,7 +13,7 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "",
+    path: "/personal-webpage",
     element: <App />,
     errorElement: <Error />,
   },
