@@ -1,3 +1,9 @@
-.some-class {
-  color: #fff;
+.projects {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  min-width: 40vw;
+  margin: 0 auto;
+  padding: 2rem;
 }

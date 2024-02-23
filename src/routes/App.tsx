@@ -35,7 +35,7 @@ function App() {
     },
     {
       name: "React",
-      color: "rgb(1,127,165)",
+      color: "rgba(0,204,255,255)",
       logo: reactLogo,
       url: "https://react.dev",
     },
@@ -44,14 +44,10 @@ function App() {
   const usedTecnologies = frameworks.map((framework) => {
     return (
       <li key={framework.name}>
-        <a
-          href={framework.url}
-          className="link-p"
-          // style={{ color: "rgba(255, 255, 255, 0.87)" }}
-        >
+        <a href={framework.url} style={{ color: framework.color }}>
           {framework.name}
+          <img src={framework.logo} alt={framework.name + " logo"} />
         </a>
-        <img src={framework.logo} alt="" />
       </li>
     );
   });
