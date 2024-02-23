@@ -83,7 +83,7 @@ function App() {
           <p>
             If you are interested in checking out some of the projects I have
             done I would encourage you to check out the&nbsp;
-            <Link to={`/projects`} className="link-p">
+            <Link to={`/personal-webpage/projects`} className="link-p">
               projects
             </Link>
             &nbsp;tab or my&nbsp;
@@ -94,7 +94,7 @@ function App() {
           </p>
           <p>
             If you are interested in contacting me you can go to the&nbsp;
-            <Link to={`/contact`} className="link-p">
+            <Link to={`/personal-webpage/contact`} className="link-p">
               contact
             </Link>
             &nbsp;tab, which contains all of my public socials and contact

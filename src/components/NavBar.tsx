@@ -7,15 +7,15 @@ function NavBar() {
     {
       // Logo placeholder
       field: "</>",
-      route: "/",
+      route: "/personal-webpage",
     },
     {
       field: "Projects",
-      route: "/projects",
+      route: "/personal-webpage/projects",
     },
     {
       field: "Contact",
-      route: "/contact",
+      route: "/personal-webpage/contact",
     },
   ];
 
