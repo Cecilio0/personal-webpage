@@ -4,22 +4,26 @@ import App from "./routes/App.tsx";
 import Projects from "./routes/projects/Projects.tsx";
 import Contact from "./routes/contact/Contact.tsx";
 import Error from "./routes/error/Error.tsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  // redirect,
+  RouterProvider,
+} from "react-router-dom";
 import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/personal-webpage",
+    path: "",
     element: <App />,
     errorElement: <Error />,
   },
   {
-    path: "/personal-webpage/projects",
+    path: "/projects",
     element: <Projects />,
     errorElement: <Error />,
   },
   {
-    path: "/personal-webpage/contact",
+    path: "/contact",
     element: <Contact />,
     errorElement: <Error />,
   },
