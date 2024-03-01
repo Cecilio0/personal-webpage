@@ -63,11 +63,10 @@ function App() {
             <span> Daniel</span>, though some people know me as
             <span> Cecilio0</span>, I am a Computer Science student based in
             Medellín, Colombia. With a passion for software development,
-            competitive programming and gaming, I strive to learn whilst having
-            fun and creating meaningful relationships.
+            competitive programming and gaming.
           </p>
           <p>
-            I'm proficient in
+            I am proficient in
             <span> Java</span>,<span> Python</span>,&nbsp;
             <span>JavaScript</span>
             &nbsp;and
@@ -91,6 +90,13 @@ function App() {
               github
             </a>
             &nbsp;profile.
+          </p>
+          <p>
+            I am a very curious person and enjoy learning and sharing knowledge
+            with others. As such I was a student tutor for the programming
+            fundamentals and data structures courses, and have also participated
+            in several clubs, such as the competitive programming, cloud and
+            game development clubs.
           </p>
           <p>
             If you are interested in contacting me you can go to the&nbsp;
