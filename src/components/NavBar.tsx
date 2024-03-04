@@ -1,30 +1,32 @@
 import "./NavBar.css";
-import { Link } from "react-router-dom";
-// import viteLogo from "../assets/vite.svg";
+import { Link, useLocation } from "react-router-dom";
+import { NavBarItem, items } from "../utils/navBarItems";
 
 function NavBar() {
-  const fields = [
-    {
-      // Logo placeholder
-      field: "</>",
-      route: "/personal-webpage",
-    },
-    {
-      field: "Projects",
-      route: "/personal-webpage/projects",
-    },
-    {
-      field: "Contact",
-      route: "/personal-webpage/contact",
-    },
-  ];
+  const location = useLocation();
 
-  const navBarItems = fields.map((field) => {
-    return (
-      <li key={field.field}>
-        <Link to={field.route}>{field.field}</Link>
-      </li>
-    );
+  const isFieldSelected = (item: NavBarItem) => {
+    if (item.route == location.pathname) {
+      return (
+        <li key={item.field}>
+          <Link className="selected-item" to={item.route}>
+            {item.field}
+          </Link>
+        </li>
+      );
+    } else {
+      return (
+        <li key={item.field}>
+          <Link className="item" to={item.route}>
+            {item.field}
+          </Link>
+        </li>
+      );
+    }
+  };
+
+  const navBarItems = items.map((item) => {
+    return isFieldSelected(item);
   });
 
   return (

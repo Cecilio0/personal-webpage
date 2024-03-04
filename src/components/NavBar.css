@@ -36,7 +36,7 @@
   align-items: center;
 }
 
-.nav-bar a {
+.nav-bar .item {
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -45,7 +45,7 @@
   line-height: 1.2em;
   overflow: visible;
 }
-.nav-bar a::after {
+.nav-bar .item::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -57,7 +57,12 @@
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.nav-bar a:hover::after {
+.nav-bar .item:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.selected-item {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
 }
