@@ -4,7 +4,6 @@ import { NavBarItem, items } from "../utils/navBarItems";
 
 function NavBar() {
   const location = useLocation();
-  console.log(location.pathname + "/");
 
   const isFieldSelected = (item: NavBarItem) => {
     if (
