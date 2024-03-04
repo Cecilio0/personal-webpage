@@ -4,9 +4,13 @@ import { NavBarItem, items } from "../utils/navBarItems";
 
 function NavBar() {
   const location = useLocation();
+  console.log(location.pathname + "/");
 
   const isFieldSelected = (item: NavBarItem) => {
-    if (item.route == location.pathname) {
+    if (
+      location.pathname == item.route ||
+      location.pathname == item.route + "/"
+    ) {
       return (
         <li key={item.field}>
           <Link className="selected-item" to={item.route}>
