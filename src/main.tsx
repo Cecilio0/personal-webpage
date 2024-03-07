@@ -5,7 +5,6 @@ import Projects from "./routes/projects/Projects.tsx";
 import Error from "./routes/error/Error.tsx";
 import {
   createBrowserRouter,
-  // redirect,
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
