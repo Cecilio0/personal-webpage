@@ -6,6 +6,7 @@ import nextLogo from "../assets/frameworks/nextjs-logo.svg";
 import nestLogo from "../assets/frameworks/nestjs-logo.svg";
 import expressLogo from "../assets/frameworks/express-logo.png";
 import reactLogo from "../assets/frameworks/react-logo.svg";
+import Footer from "../components/footer/Footer";
 
 function App() {
   const frameworks = [
@@ -99,15 +100,12 @@ function App() {
             game development clubs.
           </p>
           <p>
-            If you are interested in contacting me you can go to the&nbsp;
-            <Link to={`/personal-webpage/contact`} className="link-p">
-              contact
-            </Link>
-            &nbsp;tab, which contains all of my public socials and contact
-            information.
+            If you are interested in contacting me you can go to the footer,
+            which contains all of my public socials and contact information.
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

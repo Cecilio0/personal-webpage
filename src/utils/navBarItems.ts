@@ -13,8 +13,4 @@ export const items = [
     field: "Projects",
     route: "/personal-webpage/projects",
   },
-  {
-    field: "Contact",
-    route: "/personal-webpage/contact",
-  },
 ];

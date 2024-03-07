@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar";
 import "./Error.css";
 import { Link } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
 
 function Error() {
   return (
@@ -16,6 +17,7 @@ function Error() {
           </Link>
         </p>
       </div>
+      <Footer />
     </>
   );
 }
