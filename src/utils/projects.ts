@@ -69,7 +69,7 @@ export const projects: Project[] = [
       "This project consists of a simple REST API built using Express and " +
         "TypeScript which was meant to allow users to register, login, " +
         "comment and manage saves on a particular webpage",
-      "The API uses jwt as it's main source of authentication",
+      "The API uses jwt as its main source of authentication",
       "Finally the documentation was built using Swagger and is available " +
         'at the "/swagger-ui/index.html" route when running the project.',
     ],

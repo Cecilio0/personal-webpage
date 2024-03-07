@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./routes/App.tsx";
 import Projects from "./routes/projects/Projects.tsx";
-import Contact from "./routes/contact/Contact.tsx";
 import Error from "./routes/error/Error.tsx";
 import {
   createBrowserRouter,
@@ -25,11 +24,6 @@ const router = createBrowserRouter([
   {
     path: "/personal-webpage/projects",
     element: <Projects />,
-    errorElement: <Error />,
-  },
-  {
-    path: "/personal-webpage/contact",
-    element: <Contact />,
     errorElement: <Error />,
   },
 ]);
